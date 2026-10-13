@@ -1,0 +1,340 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Profile Cards</h1>
+    </header>
+    <main class="mainContainer">
+        <article class="cards">
+            <img src="" alt="person1">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>p1</td>
+                </tr>
+                <tr>
+                    <td>Bio</td>
+                    <td>Person 1 short biography.</td>
+                </tr>
+            </table>
+            <button>More Info</button>
+
+        </article>
+        <article class="cards">
+            <img src="" alt="person2">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>p2</td>
+                </tr>
+                <tr>
+                    <td>Bio</td>
+                    <td>Person 2 short biography.</td>
+                </tr>
+            </table>
+            <button>More Info</button>
+
+        </article>
+        <article class="cards">
+            <img src="" alt="person3">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>p3</td>
+                </tr>
+                <tr>
+                    <td>Bio</td>
+                    <td>Person 3 short biography.</td>
+                </tr>
+            </table>
+            <button>More Info</button>
+
+        </article>
+
+    </main>
+    <article class="scroll">
+        <span>
+            <h1>
+                body{
+                display: flex;
+                justify-content: center;
+                }
+                .mainContainer{
+
+                max-width: 1440px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                }
+                .box{
+
+                display: block;
+                background-color: lightblue;
+                border: 2px solid blue;
+                padding: 24px;
+                margin: 5px;
+                width: 200px;
+                }
+
+
+                .item{
+                display: inline;
+                background-color: lightblue;
+                border: 2px solid blue;
+                padding: 64px;
+                margin: 5px;
+                /* width: 200px;
+                height: 100px; */
+                }
+
+
+
+
+                .backend{
+                display: none;
+                background-color: yellow;
+                border:3px solid green;
+                padding: 24px;
+                margin: 5px;
+                width: 300px;
+                height: 100px;
+
+                }
+
+
+                .back{
+                display: inline-block;
+                background-color: yellow;
+                border:3px solid green;
+                padding: 24px;
+                margin: 5px;
+                width: 300px;
+                height: 100px;
+
+                }
+
+
+
+                .cardContainer{
+                background-color: yellow;
+                /* padding: 24px; */
+                height: 500px;
+
+                display: flex;
+
+                justify-content: space-evenly;
+
+                align-items: center;
+
+
+                flex-wrap: wrap;
+
+                row-gap: 30px;
+
+
+                }
+
+
+                .gridContainer{
+                display: grid;
+                background-color: lightblue;
+                grid-template-columns: 1fr 1fr 1fr ;
+                grid-template-rows: 2fr 1fr;
+
+
+                gap: 10px;
+                padding: 24px;
+                }
+
+                .card{
+                background-color: orange;
+                border: 2px solid black;
+                padding: 24px;
+                /* width: 200px; */
+                height: 100px;
+
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+
+
+
+
+                /* Desktop>> 1100px */
+                /* Tablet: 768px */
+                /* Mobile Vie: 768px - 345 */
+
+
+
+                /* mediaQuerry */
+                @media (max-width:1100px){
+
+                .gridContainer{
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 0fr ;
+                }
+                }
+                @media (max-width:768px){
+
+                .gridContainer{
+                grid-template-columns: 1fr ;
+                grid-template-rows: 0fr ;
+                }
+                }
+            </h1>
+
+            <h2>
+                <article class="scroll">
+                    <span>
+                        <h2>
+                            body{
+                            display: flex;
+                            justify-content: center;
+                            }
+                            .mainContainer{
+
+                            max-width: 1440px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            }
+                            .box{
+
+                            display: block;
+                            background-color: lightblue;
+                            border: 2px solid blue;
+                            padding: 24px;
+                            margin: 5px;
+                            width: 200px;
+                            }
+
+
+                            .item{
+                            display: inline;
+                            background-color: lightblue;
+                            border: 2px solid blue;
+                            padding: 64px;
+                            margin: 5px;
+                            /* width: 200px;
+                            height: 100px; */
+                            }
+
+
+
+
+                            .backend{
+                            display: none;
+                            background-color: yellow;
+                            border:3px solid green;
+                            padding: 24px;
+                            margin: 5px;
+                            width: 300px;
+                            height: 100px;
+
+                            }
+
+
+                            .back{
+                            display: inline-block;
+                            background-color: yellow;
+                            border:3px solid green;
+                            padding: 24px;
+                            margin: 5px;
+                            width: 300px;
+                            height: 100px;
+
+                            }
+
+
+
+                            .cardContainer{
+                            background-color: yellow;
+                            /* padding: 24px; */
+                            height: 500px;
+
+                            display: flex;
+
+                            justify-content: space-evenly;
+
+                            align-items: center;
+
+
+                            flex-wrap: wrap;
+
+                            row-gap: 30px;
+
+
+                            }
+
+
+                            .gridContainer{
+                            display: grid;
+                            background-color: lightblue;
+                            grid-template-columns: 1fr 1fr 1fr ;
+                            grid-template-rows: 2fr 1fr;
+
+
+                            gap: 10px;
+                            padding: 24px;
+                            }
+
+                            .card{
+                            background-color: orange;
+                            border: 2px solid black;
+                            padding: 24px;
+                            /* width: 200px; */
+                            height: 100px;
+
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            }
+
+
+
+
+
+                            /* Desktop>> 1100px */
+                            /* Tablet: 768px */
+                            /* Mobile Vie: 768px - 345 */
+
+
+
+                            /* mediaQuerry */
+                            @media (max-width:1100px){
+
+                            .gridContainer{
+                            grid-template-columns: 1fr 1fr ;
+                            grid-template-rows: 0fr ;
+                            }
+                            }
+                            @media (max-width:768px){
+
+                            .gridContainer{
+                            grid-template-columns: 1fr ;
+                            grid-template-rows: 0fr ;
+                            }
+                            }
+                        </h2>
+                    </span>
+                </article>
+            </h2>
+        </span>
+    </article>
+
+</body>
+
+</html>
